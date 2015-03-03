@@ -1892,4 +1892,4 @@ class DockBar():
             if not group.media_controls or not success:
                 group.action_launch_application()
         if len(windows) == 1:
-            windows[0].action_select_window()
+            windows[0].action_select_or_minimize_window() # default to a windows-style select/minimize unlike action_select_window()
